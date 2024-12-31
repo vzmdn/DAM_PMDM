@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">repasoexamen</string>
+    <string name="press_here">press here</string>
+    <string name="change_color">change color</string>
+    <string name="change_size">change_size</string>
+    <string name="change_visibility">change visibility</string>
+</resources>

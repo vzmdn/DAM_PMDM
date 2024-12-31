@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">examen1av</string>
+    <string name="height">Height</string>
+    <string name="in_centimeters">in centimeters</string>
+    <string name="height_cm">Height (cm)</string>
+    <string name="weight">Weight</string>
+    <string name="compute_imc">Compute IMC</string>
+    <string name="in_kilograms">in kilograms</string>
+    <string name="weight_kg">Weight (kg)</string>
+    <string name="list_sensors">List Sensors</string>
+    <string name="back">Go back</string>
+</resources>
