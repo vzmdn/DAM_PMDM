@@ -40,3 +40,5 @@ include(":pmdm")
 include(":examen1av")
 include(":viewmodel1")
 include(":coroutinedemo")
+include(":examenconviewmodel")
+
