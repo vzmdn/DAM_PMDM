@@ -4,7 +4,8 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    >
 
     <ImageView
         android:id="@+id/imageView"
@@ -15,15 +16,27 @@
 
         />
 
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
+    <Button
+        android:id="@+id/btnPickTeam"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Button"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="30dp"
+        android:text="Pick your favorite team"
+        app:layout_constraintBottom_toTopOf="@id/btnSensors"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnSensors"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sensors list"
+        app:layout_constraintTop_toBottomOf="@+id/btnPickTeam"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
