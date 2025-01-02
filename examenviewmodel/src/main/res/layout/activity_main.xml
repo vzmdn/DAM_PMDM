@@ -4,39 +4,59 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    >
+
+    tools:context=".MainActivity">
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:contentDescription="backgroundImage"
-        android:scaleType="centerCrop"
+        android:contentDescription="@string/backgroundimage"
+        android:scaleType="centerCrop" />
 
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="@string/options"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="36sp"
+        android:layout_margin="15dp"
         />
+
 
     <Button
         android:id="@+id/btnPickTeam"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:text="Pick your favorite team"
+        android:text="@string/pick_your_favorite_team"
         app:layout_constraintBottom_toTopOf="@id/btnSensors"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/tvTitle"
+        android:layout_margin="15dp"
+        />
 
     <Button
         android:id="@+id/btnSensors"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Sensors list"
-        app:layout_constraintTop_toBottomOf="@+id/btnPickTeam"
+        android:text="@string/sensors_list"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        />
+        app:layout_constraintTop_toBottomOf="@+id/btnPickTeam"
+        android:layout_margin="15dp"/>
 
+    <Button
+        android:id="@+id/btnBMI"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/calculate_bmi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSensors"
+        android:layout_margin="15dp"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

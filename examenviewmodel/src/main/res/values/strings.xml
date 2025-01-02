@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">examenViewModel</string>
+    <string name="cancel">cancel</string>
+    <string name="confirm">confirm</string>
+    <string name="pick_your_favorite_team">Pick your favorite team</string>
+    <string name="sensors_list">Sensors list</string>
+    <string name="calculate_bmi">Calculate BMI</string>
+    <string name="options">Options</string>
+    <string name="backgroundimage">backgroundImage</string>
+    <string name="logo">logo</string>
 </resources>

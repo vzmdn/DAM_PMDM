@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "com.example.examenviewmodel"
-    compileSdk = 35
+    compileSdk = 34
 
     buildFeatures{
         viewBinding = true

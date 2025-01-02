@@ -19,7 +19,8 @@
         android:contentDescription="@string/logo"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/teamName"
-        tools:src="@drawable/placeholder_image"
+        
+        
         tools:ignore="MissingConstraints" />
 
     <TextView
@@ -31,8 +32,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         android:textSize="36sp"
         android:padding="12dp"
-        tools:text="Team name"
-
+        android:tooltipText="Nombre del equipo"
         tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

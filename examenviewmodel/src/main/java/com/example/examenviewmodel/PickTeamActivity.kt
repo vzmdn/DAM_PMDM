@@ -1,6 +1,7 @@
 package com.example.examenviewmodel
 
 import android.os.Bundle
+import android.widget.Button
 import android.widget.Spinner
 import androidx.activity.enableEdgeToEdge
 import androidx.activity.viewModels
@@ -13,6 +14,8 @@ class PickTeamActivity : AppCompatActivity() {
 
     lateinit var binding: ActivityPickTeamBinding
     lateinit var spinner: Spinner
+    lateinit var btnConfirm: Button
+    lateinit var btnCancel: Button
     val viewModel: MainViewModel by viewModels()
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -32,6 +35,13 @@ class PickTeamActivity : AppCompatActivity() {
             val adapter = TeamAdapter(this, teams)
             spinner.adapter = adapter
         }
+
+        initListeners()
+
+    }
+    fun initListeners() {
+        btnConfirm = binding.btnConfirm
+        btnCancel = binding.btnCancel
 
     }
 }
