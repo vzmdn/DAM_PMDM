@@ -66,7 +66,10 @@ Team(
 Team(
     "Zaragoza",
     "https://github.com/rafapuig/PMDM7N_2024/blob/master/escudos/zaragoza.png?raw=true"
-)
+),
+Team(
+    "Madrid",
+    "https://github.com/rafapuig/PMDM7N_2024/blob/master/escudos/real_madrid.png?raw=true")
 
 
 

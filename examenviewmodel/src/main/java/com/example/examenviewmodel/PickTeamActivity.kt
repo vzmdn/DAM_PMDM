@@ -1,5 +1,7 @@
 package com.example.examenviewmodel
 
+import android.app.Activity
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.Spinner
@@ -16,7 +18,7 @@ class PickTeamActivity : AppCompatActivity() {
     lateinit var spinner: Spinner
     lateinit var btnConfirm: Button
     lateinit var btnCancel: Button
-    val viewModel: MainViewModel by viewModels()
+    private val viewModel: MainViewModel by viewModels()
 
     override fun onCreate(savedInstanceState: Bundle?) {
 
@@ -36,12 +38,43 @@ class PickTeamActivity : AppCompatActivity() {
             spinner.adapter = adapter
         }
 
-        initListeners()
+        // Retrieve the selected team from the intent
+        val selectedTeamName = intent.getStringExtra("selectedTeamName")
+        val selectedTeamUrl = intent.getStringExtra("selectedTeamUrl")
+        if (selectedTeamName != null && selectedTeamUrl != null) {
+            val selectedTeam = Team(selectedTeamName, selectedTeamUrl)
+            viewModel.setSelectedTeam(selectedTeam)
+        }
 
+        viewModel.selectedTeam.observe(this) { selectedTeam ->
+            selectedTeam?.let {
+                val position = viewModel.spinnerItems.value?.indexOf(it) ?: -1
+                if (position >= 0) {
+                    spinner.setSelection(position)
+                }
+            }
+        }
+
+        initListeners()
     }
+
     fun initListeners() {
         btnConfirm = binding.btnConfirm
-        btnCancel = binding.btnCancel
 
+        btnConfirm.setOnClickListener {
+            val position = spinner.selectedItemPosition
+            viewModel.onItemSelected(position)
+            val selectedTeam = viewModel.selectedTeam.value
+            val resultIntent = Intent()
+            resultIntent.putExtra("selectedTeamName", selectedTeam?.name)
+            resultIntent.putExtra("selectedTeamUrl", selectedTeam?.url)
+            setResult(Activity.RESULT_OK, resultIntent)
+            finish()
+        }
+
+        btnCancel = binding.btnCancel
+        btnCancel.setOnClickListener {
+            finish()
+        }
     }
 }

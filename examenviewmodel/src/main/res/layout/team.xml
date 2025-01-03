@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="horizontal"
-    android:padding="8dp">
+    >
 
 <androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
@@ -18,9 +18,10 @@
         android:layout_height="80dp"
         android:contentDescription="@string/logo"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/teamName"
-        tools:src="@drawable/placeholder_image"
-        tools:ignore="MissingConstraints" />
+        tools:src="@drawable/ic_launcher_foreground"/>
 
     <TextView
         android:id="@+id/teamName"
@@ -30,10 +31,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         android:textSize="36sp"
-        android:padding="12dp"
-        tools:text="Team name"
-
-        tools:ignore="MissingConstraints" />
+        tools:text="Team name" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 

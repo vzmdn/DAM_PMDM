@@ -8,4 +8,6 @@
     <string name="options">Options</string>
     <string name="backgroundimage">backgroundImage</string>
     <string name="logo">logo</string>
+    <string name="teams">Teams</string>
+    <string name="sensors">Sensors</string>
 </resources>
