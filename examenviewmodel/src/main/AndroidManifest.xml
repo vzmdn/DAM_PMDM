@@ -11,6 +11,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
         <activity
+            android:name=".BmiResultActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BmiActivity"
+            android:exported="false" />
+        <activity
             android:name=".SensorsActivity"
             android:exported="false" />
         <activity

@@ -4,10 +4,19 @@
     <string name="confirm">confirm</string>
     <string name="pick_your_favorite_team">Pick your favorite team</string>
     <string name="sensors_list">Sensors list</string>
-    <string name="calculate_bmi">Calculate BMI</string>
+    <string name="calculate_bmi">Calculate IMC</string>
     <string name="options">Options</string>
     <string name="backgroundimage">backgroundImage</string>
     <string name="logo">logo</string>
     <string name="teams">Teams</string>
     <string name="sensors">Sensors</string>
+    <string name="bmi">IMC</string>
+    <string name="weight">weight</string>
+    <string name="height">height</string>
+    <string name="in_centimeters">in centimeters:</string>
+    <string name="in_kilograms">in kilograms:</string>
+    <string name="imc">IMC</string>
+    <string name="compute_imc">compute imc</string>
+    <string name="your_imc_is">"Your IMC is: "</string>
+    <string name="back">back</string>
 </resources>

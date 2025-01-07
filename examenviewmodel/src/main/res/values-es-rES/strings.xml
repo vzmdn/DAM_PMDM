@@ -3,4 +3,21 @@
     <string name="app_name">examenViewModel</string>
     <string name="cancel">cancelar</string>
     <string name="confirm">confirmar</string>
+    <string name="pick_your_favorite_team">Elige tu equipo favorito</string>
+    <string name="sensors_list">Lista de sensores</string>
+    <string name="calculate_bmi">Calcular IMC</string>
+    <string name="options">Opciones</string>
+    <string name="backgroundimage">imagenDeFondo</string>
+    <string name="logo">logo</string>
+    <string name="teams">Equipos</string>
+    <string name="sensors">Sensores</string>
+    <string name="bmi">BMI</string>
+    <string name="weight">peso</string>
+    <string name="height">estatura</string>
+    <string name="in_centimeters">en centimetros:</string>
+    <string name="in_kilograms">en kilogramos:</string>
+    <string name="imc">BMI</string>
+    <string name="compute_imc">calcular bmi</string>
+    <string name="your_imc_is">Tu BMI es:</string>
+    <string name="back">volver</string>
 </resources>

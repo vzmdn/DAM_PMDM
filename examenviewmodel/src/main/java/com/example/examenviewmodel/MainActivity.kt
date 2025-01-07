@@ -20,6 +20,7 @@ class MainActivity : AppCompatActivity() {
     lateinit var imageView : ImageView
     lateinit var btnPickTeam : Button
     lateinit var btnSensors : Button
+    lateinit var btnBmi : Button
     private val viewModel: MainViewModel by viewModels()
 
     private val pickTeamLauncher = registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { result ->
@@ -49,6 +50,7 @@ class MainActivity : AppCompatActivity() {
         imageView = binding.imageView
         btnPickTeam = binding.btnPickTeam
         btnSensors = binding.btnSensors
+        btnBmi = binding.btnBMI
 
 
         initListeners()
@@ -81,6 +83,11 @@ class MainActivity : AppCompatActivity() {
         btnSensors.setOnClickListener {
             val sensorsActivity = Intent(this, SensorsActivity::class.java)
             startActivity(sensorsActivity)
+        }
+
+        btnBmi.setOnClickListener() {
+            val bmiActivity = Intent(this, BmiActivity::class.java)
+            startActivity(bmiActivity)
         }
     }
 
