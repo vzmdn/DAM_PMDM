@@ -21,6 +21,7 @@ class MainViewModel(val repository : MainRepository) : ViewModel() {
                 val repository : MainRepository = (application as InversionDemoApp).repository
 
                 return MainViewModel(repository) as T
+
             }
         }
     }
